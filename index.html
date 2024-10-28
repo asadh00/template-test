@@ -6,12 +6,34 @@
     <title>Templete</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design
     ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+         <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote">You miss 100% of the shots you don’t take.</span>
+         </div>
+         <!-- Author -->
+          <div class="quote-author">
+            <span id="author">Wayne Gretzky</span>
+          </div>
+          <!-- Buttons -->
+           <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This!">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+    <!-- Loader -->
+
+    <div class="loader" id="loader"></div>
     <!--Script  -->
+    <script src="quote.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
